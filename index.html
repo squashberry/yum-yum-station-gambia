@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Fajara Garden</title>
+
+    <meta
+        name="description"
+        content="Fajara Garden — food, drinks and good moments."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+    rel="icon"
+    type="image/svg+xml"
+    href="favicon.svg"
+/>
+
+<link
+    rel="apple-touch-icon"
+    href="favicon.svg"
+/>
+
+<meta
+    name="theme-color"
+    content="#29452f"
+/>
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         SPLASH SCREEN
+    ========================================== -->
+
+    <div id="splash-screen" class="splash-screen">
+
+        <div class="splash-glow splash-glow-one"></div>
+        <div class="splash-glow splash-glow-two"></div>
+
+        <div class="splash-content">
+
+            <div class="splash-logo">
+                <div class="splash-logo-mark">
+                    <i data-lucide="leaf"></i>
+                </div>
+            </div>
+
+            <h1>Fajara Garden</h1>
+
+            <p>Good food. Good moments.</p>
+
+            <div class="splash-loader">
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         APP
+    ========================================== -->
+
+    <main id="app" class="app hidden">
+
+        <!-- =====================================
+             TOP BAR
+        ====================================== -->
+
+        <header class="topbar">
+
+            <button
+                id="home-back-btn"
+                class="icon-button hidden"
+                aria-label="Go back"
+            >
+                <i data-lucide="chevron-left"></i>
+            </button>
+
+            <div class="brand-mini">
+                <div class="brand-mini-icon">
+                    <i data-lucide="leaf"></i>
+                </div>
+
+                <div>
+                    <span class="eyebrow">WELCOME TO</span>
+                    <strong>Fajara Garden</strong>
+                </div>
+            </div>
+
+            <button
+                id="profile-btn"
+                class="avatar-button"
+                aria-label="Profile"
+            >
+                <i data-lucide="user"></i>
+            </button>
+
+        </header>
+
+
+        <!-- =====================================
+             PAGE CONTAINER
+        ====================================== -->
+
+        <section id="page-container">
+
+
+            <!-- =================================
+                 HOME PAGE
+            ================================== -->
+
+            <section id="home-page" class="page active">
+
+                <!-- HERO -->
+
+                <div class="hero-card">
+
+                    <div class="hero-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1400&q=85"
+                            alt="Beautiful restaurant food"
+                        />
+
+                        <div class="hero-overlay"></div>
+
+                    </div>
+
+                    <div class="hero-content">
+
+                        <span class="hero-pill">
+                            <span class="live-dot"></span>
+                            OPEN TODAY
+                        </span>
+
+                        <h1>
+                            Your garden
+                            <br />
+                            for good food.
+                        </h1>
+
+                        <p>
+                            Relax, eat well and enjoy the atmosphere.
+                        </p>
+
+                        <button
+                            class="primary-button"
+                            data-page="menu"
+                        >
+                            Explore Menu
+                            <i data-lucide="arrow-up-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLOATING SEARCH -->
+
+                <!-- FLOATING SEARCH -->
+
+<div class="floating-search-wrapper">
+
+    <div class="floating-search">
+
+        <div class="search-icon">
+            <i data-lucide="search"></i>
+        </div>
+
+        <input
+            type="text"
+            id="home-search"
+            placeholder="Search food, drinks..."
+            autocomplete="off"
+            spellcheck="false"
+        />
+
+        <button
+            id="search-filter-btn"
+            class="search-filter"
+            aria-label="Search"
+        >
+            <i data-lucide="sliders-horizontal"></i>
+        </button>
+
+    </div>
+
+    <div
+        id="search-suggestions"
+        class="search-suggestions hidden"
+    ></div>
+
+</div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="quick-actions">
+
+                    <button class="quick-action" data-page="menu">
+                        <span class="quick-icon">
+                            <i data-lucide="utensils"></i>
+                        </span>
+
+                        <span>Menu</span>
+                    </button>
+
+                    <button class="quick-action">
+                        <span class="quick-icon">
+                            <i data-lucide="map-pin"></i>
+                        </span>
+
+                        <span>Location</span>
+                    </button>
+
+                    <button
+    class="quick-action call-us-action"
+    id="home-call-action"
+>
+    <span class="quick-icon">
+        <i data-lucide="phone"></i>
+    </span>
+
+    <span>Call Us</span>
+</button>
+
+                    <button
+    class="quick-action reserve-action"
+    id="home-reserve-action"
+    type="button"
+>
+    <span class="quick-icon">
+        <i data-lucide="calendar-days"></i>
+    </span>
+
+    <span>Reserve</span>
+</button>
+
+                </div>
+
+
+                <!-- SECTION HEADER -->
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-kicker">TODAY'S PICKS</span>
+                        <h2>What are you craving?</h2>
+                    </div>
+
+                    <button
+                        class="text-button"
+                        data-page="menu"
+                    >
+                        See all
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- FEATURED FOOD -->
+
+                <div class="horizontal-scroll featured-scroll">
+
+                    <article class="food-card large-card">
+
+                        <div class="food-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+                                alt="Grilled food"
+                            />
+
+                            <button
+                                class="favorite-button"
+                                aria-label="Favorite"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                            <span class="food-tag">
+                                POPULAR
+                            </span>
+                        </div>
+
+                        <div class="food-info">
+
+                            <div>
+                                <h3>Garden Grill</h3>
+                                <p>Chef's grilled selection</p>
+                            </div>
+
+                            <strong class="price">
+                                D420
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="food-card large-card">
+
+                        <div class="food-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=900&q=85"
+                                alt="Restaurant dish"
+                            />
+
+                            <button
+                                class="favorite-button"
+                                aria-label="Favorite"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="food-info">
+
+                            <div>
+                                <h3>Garden Special</h3>
+                                <p>A house favourite</p>
+                            </div>
+
+                            <strong class="price">
+                                D350
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="food-card large-card">
+
+                        <div class="food-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                                alt="Fresh healthy food"
+                            />
+
+                            <button
+                                class="favorite-button"
+                                aria-label="Favorite"
+                            >
+                                <i data-lucide="heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="food-info">
+
+                            <div>
+                                <h3>Fresh Garden Bowl</h3>
+                                <p>Fresh and colourful</p>
+                            </div>
+
+                            <strong class="price">
+                                D290
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- CATEGORIES -->
+
+                <div class="section-heading section-heading-margin">
+
+                    <div>
+                        <span class="section-kicker">DISCOVER</span>
+                        <h2>Browse the garden</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <button
+                        class="category-card category-wide"
+                        data-category="Food"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85"
+                            alt="Food"
+                        />
+
+                        <div class="category-overlay"></div>
+
+                        <div class="category-content">
+                            <span>01</span>
+                            <h3>Food</h3>
+                            <p>Fresh from the kitchen</p>
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="category-card"
+                        data-category="Drinks"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85"
+                            alt="Drinks"
+                        />
+
+                        <div class="category-overlay"></div>
+
+                        <div class="category-content">
+                            <span>02</span>
+                            <h3>Drinks</h3>
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="category-card"
+                        data-category="Desserts"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85"
+                            alt="Desserts"
+                        />
+
+                        <div class="category-overlay"></div>
+
+                        <div class="category-content">
+                            <span>03</span>
+                            <h3>Desserts</h3>
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+                <!-- EXPERIENCE SECTION -->
+
+                <div class="experience-card">
+
+                    <div class="experience-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85"
+                            alt="Restaurant atmosphere"
+                        />
+
+                    </div>
+
+                    <div class="experience-content">
+
+                        <span class="section-kicker">
+                            MORE THAN A MEAL
+                        </span>
+
+                        <h2>
+                            Stay a little longer.
+                        </h2>
+
+                        <p>
+                            Whether you're meeting friends, having dinner
+                            or just looking for somewhere to unwind,
+                            Fajara Garden is designed for good moments.
+                        </p>
+
+                        <button class="secondary-button">
+                            Discover Fajara Garden
+                            <i data-lucide="arrow-up-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTIMONIAL -->
+
+                <div class="quote-card">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+                    <p>
+                        Good food tastes even better when the atmosphere
+                        feels right.
+                    </p>
+
+                    <div class="quote-author">
+                        <span class="author-line"></span>
+                        <span>Fajara Garden</span>
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM CTA -->
+
+                <div class="booking-card">
+
+                    <div class="booking-text">
+
+                        <span class="section-kicker">
+                            PLAN YOUR VISIT
+                        </span>
+
+                        <h2>
+                            Make tonight a garden night.
+                        </h2>
+
+                        <p>
+                            Come hungry. Leave happy.
+                        </p>
+
+                    </div>
+
+                    <button class="primary-button light-button">
+                        Reserve a Table
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="home-bottom-space"></div>
+
+            </section>
+
+
+            <!-- =================================
+                 MENU PAGE
+            ================================== -->
+
+            <section id="menu-page" class="page">
+
+                <div class="page-title-block">
+
+                    <span class="section-kicker">
+                        FAJARA GARDEN
+                    </span>
+
+                    <h1>Our Menu</h1>
+
+                    <p>
+                        Something for every mood.
+                    </p>
+
+                </div>
+
+
+                <!-- MENU PRE-TABS -->
+
+                <div class="menu-tabs">
+
+                    <button
+                        class="menu-tab active"
+                        data-menu-category="All"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="menu-tab"
+                        data-menu-category="Food"
+                    >
+                        Food
+                    </button>
+
+                    <button
+                        class="menu-tab"
+                        data-menu-category="Drinks"
+                    >
+                        Drinks
+                    </button>
+
+                    <button
+                        class="menu-tab"
+                        data-menu-category="Desserts"
+                    >
+                        Desserts
+                    </button>
+
+                </div>
+
+
+                <!-- MENU ITEMS -->
+
+                <div id="menu-items" class="menu-list">
+
+                </div>
+
+
+                <div class="menu-bottom-space"></div>
+
+            </section>
+
+
+            <!-- =================================
+                 ORDERS PAGE
+            ================================== -->
+
+            <section id="orders-page" class="page">
+
+    <div class="page-title-block">
+
+        <span class="section-kicker">
+            YOUR EXPERIENCE
+        </span>
+
+        <h1>Your Order</h1>
+
+        <p>
+            Everything you're planning to enjoy.
+        </p>
+
+    </div>
+
+    <div id="order-content"></div>
+
+</section>
+
+
+            <!-- =================================
+                 MORE PAGE
+            ================================== -->
+
+            <section id="more-page" class="page">
+
+                <div class="page-title-block">
+
+                    <span class="section-kicker">
+                        FAJARA GARDEN
+                    </span>
+
+                    <h1>More</h1>
+
+                    <p>
+                        Everything else you need.
+                    </p>
+
+                </div>
+
+
+                <div class="more-list">
+
+                    <button class="more-item">
+                        <span class="more-item-icon">
+                            <i data-lucide="map-pin"></i>
+                        </span>
+
+                        <span class="more-item-text">
+                            <strong>Find Us</strong>
+                            <small>Get directions to Fajara Garden</small>
+                        </span>
+
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+
+
+                    <button class="more-item">
+                        <span class="more-item-icon">
+                            <i data-lucide="phone"></i>
+                        </span>
+
+                        <span class="more-item-text">
+                            <strong>Contact Us</strong>
+                            <small>Speak with our team</small>
+                        </span>
+
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+
+
+                    <button class="more-item">
+                        <span class="more-item-icon">
+                            <i data-lucide="calendar"></i>
+                        </span>
+
+                        <span class="more-item-text">
+                            <strong>Reservations</strong>
+                            <small>Plan your visit</small>
+                        </span>
+
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+
+
+                    <button class="more-item">
+                        <span class="more-item-icon">
+                            <i data-lucide="instagram"></i>
+                        </span>
+
+                        <span class="more-item-text">
+                            <strong>Instagram</strong>
+                            <small>See what's happening</small>
+                        </span>
+
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- =====================================
+             FLOATING TAB BAR
+        ====================================== -->
+
+        <nav class="floating-tabbar">
+
+    <!-- THIS IS THE MOVING GREEN SHAPE -->
+    <span
+        class="tab-indicator"
+        aria-hidden="true"
+    ></span>
+
+
+    <button
+        class="tab-item active"
+        data-page="home"
+    >
+        <span class="tab-icon">
+            <i data-lucide="house"></i>
+        </span>
+
+        <span class="tab-label">
+            Home
+        </span>
+    </button>
+
+
+    <button
+        class="tab-item"
+        data-page="menu"
+    >
+        <span class="tab-icon">
+            <i data-lucide="utensils"></i>
+        </span>
+
+        <span class="tab-label">
+            Menu
+        </span>
+    </button>
+
+
+    <button
+        class="tab-item"
+        data-page="orders"
+    >
+        <span class="tab-icon">
+            <i data-lucide="shopping-bag"></i>
+        </span>
+
+        <span class="tab-label">
+            Order
+        </span>
+    </button>
+
+
+    <button
+        class="tab-item"
+        data-page="more"
+    >
+        <span class="tab-icon">
+            <i data-lucide="ellipsis"></i>
+        </span>
+
+        <span class="tab-label">
+            More
+        </span>
+    </button>
+
+</nav>
+<!-- =========================================
+     FLOATING CALL BUTTON
+========================================== -->
+
+<!-- =========================================
+     FLOATING GARDEN ACTIONS
+========================================== -->
+
+<div
+    id="floating-actions"
+    class="floating-actions"
+>
+
+    <!-- GARDEN AI -->
+
+    <button
+        id="floating-ai-button"
+        class="floating-action-button floating-ai-button"
+        aria-label="Open Garden AI"
+    >
+
+        <span class="floating-action-icon ai-action-icon">
+
+            <i data-lucide="sparkles"></i>
+
+        </span>
+
+        <span class="floating-action-text">
+
+            <small>Need help?</small>
+
+            <strong>Garden AI</strong>
+
+        </span>
+
+    </button>
+
+
+    <!-- CALL US -->
+
+    <button
+        id="floating-call-button"
+        class="floating-action-button floating-call-button"
+        aria-label="Call Fajara Garden"
+    >
+
+        <span class="floating-action-icon">
+
+            <i data-lucide="phone"></i>
+
+        </span>
+
+        <span class="floating-action-text">
+
+            <small>Need us?</small>
+
+            <strong>Call Us</strong>
+
+        </span>
+
+    </button>
+
+</div>
+
+<!-- =========================================
+     GARDEN AI MODAL
+========================================== -->
+
+<div
+    id="garden-ai-overlay"
+    class="garden-ai-overlay"
+>
+
+    <div
+        id="garden-ai-sheet"
+        class="garden-ai-sheet"
+    >
+
+        <div class="garden-ai-handle"></div>
+
+
+        <!-- INTRO -->
+
+        <div
+            id="garden-ai-intro"
+            class="garden-ai-intro"
+        >
+
+            <div class="garden-ai-orb">
+
+                <i data-lucide="sparkles"></i>
+
+            </div>
+
+            <span class="section-kicker">
+                GARDEN AI
+            </span>
+
+            <h2 id="garden-ai-title">
+                Let's AI recommend something for you.
+            </h2>
+
+            <p id="garden-ai-description">
+                Tell me what you're in the mood for and
+                I'll build something from what's available.
+            </p>
+
+            <button
+                id="start-garden-ai"
+                class="garden-ai-main-button"
+            >
+
+                Let's do it
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+            <button
+                id="close-garden-ai-intro"
+                class="garden-ai-dismiss"
+            >
+                Maybe later
+            </button>
+
+        </div>
+
+
+        <!-- CHAT -->
+
+        <div
+            id="garden-ai-chat"
+            class="garden-ai-chat hidden"
+        >
+
+            <div class="garden-ai-chat-top">
+
+                <div class="garden-ai-chat-brand">
+
+                    <div class="garden-ai-mini-orb">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+
+                    <div>
+                        <strong>Garden AI</strong>
+                        <span>Menu concierge</span>
+                    </div>
+
+                </div>
+
+                <button
+                    id="close-garden-ai"
+                    class="garden-ai-close"
+                    aria-label="Close"
+                >
+                    <i data-lucide="x"></i>
+                </button>
+
+            </div>
+
+
+            <div
+                id="garden-ai-messages"
+                class="garden-ai-messages"
+            ></div>
+
+
+            <div
+                id="garden-ai-suggestions"
+                class="garden-ai-suggestions"
+            ></div>
+
+
+            <div class="garden-ai-input-area">
+
+                <input
+                    id="garden-ai-input"
+                    type="text"
+                    placeholder="Type your answer..."
+                    autocomplete="off"
+                />
+
+                <button
+                    id="garden-ai-send"
+                    class="garden-ai-send"
+                    aria-label="Send"
+                >
+                    <i data-lucide="arrow-up"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </main>
+
+
+    
+    <!-- =========================================
+         TOAST
+    ========================================== -->
+
+    <div id="toast" class="toast">
+
+        <div class="toast-icon">
+            <i data-lucide="check"></i>
+        </div>
+
+        <span id="toast-message">
+            Added to order
+        </span>
+
+    </div>
+
+
+    <!-- =========================================
+         LUCIDE
+    ========================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
